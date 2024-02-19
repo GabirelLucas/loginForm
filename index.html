@@ -1,0 +1,66 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headerHome">
+            <img src="./assets/logo.svg" alt="#">
+        </div>
+        <div class="boxForm">
+            <div class="titleBox textPrimary">
+                <img src="./assets/log-in.svg" alt="">
+                <h1>Faça seu login</h1>
+            </div>
+            <p>Entre com suas informações de cadastro.</p>
+            <form action="">
+                <label class="fieldName textPrimary" for="E-mail">E-mail:</label>
+                <div class="inputLogin containerInput">
+                    <input 
+                        class="cadastro"  
+                        type="email" 
+                        id="E-mail" 
+                        placeholder="Digite seu E-mail"
+                        minlength="16"
+                        maxlength="32"
+                        pattern=".+@DEVgroup\.com"
+                        required
+                        title="Apenas E-mails com o dominío @DEVgroup.com serão aceitos "
+                    >
+                </div>
+                <label class="fieldName textPrimary" for="senha">Senha:</label>
+                <div class="inputPass containerInput">
+                    <input 
+                        class="cadastro" 
+                        type="password" 
+                        id="senha" 
+                        placeholder="Digite sua Senha"
+                        minlength="8"
+                        maxlength="32"
+                        title="A senha deve conter no mínimo 8 caracteres"
+                        required
+                    >
+                    <img src="./assets/eye.svg" class="olho" alt="#">
+                </div>
+                <div class="optionsPassword textPrimary">
+                    <label class="rememberMe" for="">
+                        <input type="checkbox" checked>Lembre-me
+                    </label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <button>Entrar</button>
+                <a class="newRegistration" href="#">Não tem uma conta? <strong>Registre-se</strong></a>
+            </form>
+        </div>
+    </div>
+    <div class="containerImage">
+        
+    </div>
+</body>
+</html>
